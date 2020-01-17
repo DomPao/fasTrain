@@ -1,0 +1,722 @@
+{
+  "id": "b5ccaaf7-bbe8-42fa-a036-f2ae21fadd62",
+  "version": "2.0",
+  "name": "fasTrain",
+  "url": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+  "tests": [{
+    "id": "3d38bd44-41c4-44de-b47d-b4770293a523",
+    "name": "tc 8.0",
+    "commands": [{
+      "id": "9dc1f549-f5da-4f58-bcff-94deda00d3bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d3f1412-2d5c-4622-9468-1b53c73d41a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b285e87-de16-41c5-be5e-aff29e39c65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2deee323-6e75-4ac0-949e-2fb0b35986c1",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7675eba4-42f3-4243-88e8-3a116a7a23a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "E"
+    }, {
+      "id": "b88dbbdf-38bd-4eb7-a832-f8b4397e27e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e33c54c-b4ad-419d-8ac7-e6c5b4b336e6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df13d825-33dc-4973-90d1-fed125f7885b",
+    "name": "tc 8.1",
+    "commands": [{
+      "id": "b1ab0331-bfe0-480d-a275-caa99640902c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b3cea68-cb6c-4c8d-971e-ca15ce17717f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73f76406-084a-478d-ac19-c2a5ab8bebb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0895f78-60e9-456c-b1e1-390a8a24086b",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5373971d-d888-41ef-92e3-e837f1a7ebcd",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio89986"
+    }, {
+      "id": "d6db1f8e-1840-4cc2-88a4-e09454bcfc21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32cf1613-2529-4e88-b4d8-559d465a806b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6c53d750-d5b0-495b-ad42-1c219d36b537",
+    "name": "tc 8.2",
+    "commands": [{
+      "id": "d9996306-9171-494a-bc16-4c8262feeeeb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5186ae10-92c9-46a7-b101-f887e3151784",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b10b546b-1b01-4ac3-b2e2-a9b5415e5640",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "718e1e48-6b94-49e8-9f77-2c2225115753",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a457f58-e207-4d71-a803-c4443e6f8856",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio"
+    }, {
+      "id": "d31bcf7c-5a04-45f4-8747-5598677343ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c29668b9-e271-47a4-b6dc-0d5888f9c226",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Ac"
+    }, {
+      "id": "214794c9-7f1c-47fc-bd90-c6362a5fae1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "697f175b-7306-40e9-9a13-c49b86957434",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bd0d2d9d-828a-4edd-891d-f62316aa0948",
+    "name": "tc 8.3",
+    "commands": [{
+      "id": "529c49b3-94af-47e3-967e-535954ba9283",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c80f2bfa-b5b7-4641-a833-935c436e75b3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad5a4a13-03cb-4b2c-b381-e0714d2fd1e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3c93090-6092-48e9-ba29-1a252d015594",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258e81ae-c07a-4128-8be3-5887a8e57002",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio"
+    }, {
+      "id": "9057cbb9-e273-4e7a-932f-7683f78c046a",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a5862e-28f2-425e-96c4-fd2e08617441",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Ac&%122"
+    }, {
+      "id": "2575490f-f2e1-4b51-b894-d6e5b30c3980",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0315a5e8-6e41-4eda-83c1-94a8eba878e2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9640e64c-dd70-461b-9956-0cf829d74f78",
+    "name": "tc 8.4",
+    "commands": [{
+      "id": "c6cc2a2e-08f0-4512-ad60-10a25317886f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6ea43ab-494e-4da5-82c5-764829672c6b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b9fce5-8746-4526-972e-c397b6f1b7f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39aa00c0-e5e5-4bc1-9097-a289be2ee121",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "217633ed-cdd7-4fdb-b417-221a6d4ca6c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio"
+    }, {
+      "id": "8ddf66f2-5437-44b6-93bc-ea5a87614eaf",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de3e285-4485-4cde-9bf6-702ab6a52e73",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Acierno"
+    }, {
+      "id": "e0642e67-0876-4a73-a740-a01379f39fc3",
+      "comment": "",
+      "command": "click",
+      "target": "name=codice",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bdd43eb-63ff-4edb-ac96-71ffd038a0d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=codice",
+      "targets": [],
+      "value": "ay55"
+    }, {
+      "id": "3058a564-5ca7-4179-b039-2cee8d7ef466",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc51ee6f-4c51-443d-81e6-ce33da9b12b2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2a18c25f-b982-4b3b-9d8c-45dd9d05c0a0",
+    "name": "tc 8.5",
+    "commands": [{
+      "id": "a341d50e-349c-45f6-80f1-c3151808a8ba",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5653acff-0378-427b-8023-008f90708005",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c73228e9-22eb-4d42-b8cb-c5f131b3a0f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c15552-97e0-4d92-b482-30e3efb2a03b",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c55f62-dc34-44ea-b1eb-90fe5ff4e45e",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio"
+    }, {
+      "id": "4ed873cc-f7b8-43d5-8ce0-e13bb2614201",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ca0da75-07a4-4e53-8ee7-798cbd0f51fa",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Acierno"
+    }, {
+      "id": "747756bd-f8cf-4918-9e3e-7370a58584e4",
+      "comment": "",
+      "command": "click",
+      "target": "name=codice",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "603304c7-5716-4465-b5b8-be7b37e2eada",
+      "comment": "",
+      "command": "type",
+      "target": "name=codice",
+      "targets": [],
+      "value": "ay5588%%"
+    }, {
+      "id": "6cbaa40d-5000-4539-8582-55453a9f5cf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e811de7b-a9f9-4438-8f6c-e6cac174bea5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "839a72aa-d380-4a1a-806c-0f5de01527e4",
+    "name": "tc 8.6",
+    "commands": [{
+      "id": "7f19689c-cc8c-48a7-8af5-05eec9e59741",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87261927-aed2-4d9c-ad66-ecf2d8456615",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Biglietti acquistati",
+      "targets": [
+        ["linkText=Biglietti acquistati", "linkText"],
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Biglietti acquistati')]", "xpath:link"],
+        ["xpath=//ul[@id='menu2']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'BigliettiAcquistati?email=erminio.acierno@libero.it')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Biglietti acquistati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3980ecd5-3d43-4964-aae5-5dcf030f3676",
+      "comment": "",
+      "command": "click",
+      "target": "css=.table:nth-child(6) .btn",
+      "targets": [
+        ["css=.table:nth-child(6) .btn", "css:finder"],
+        ["xpath=//button[@onclick='modificaBiglietto(217)']", "xpath:attributes"],
+        ["xpath=//table[5]/tbody/tr[3]/td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1783320e-9390-456c-9176-f7476113c7a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20d27a51-fca9-417b-b537-d92842345805",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Ermnio"
+    }, {
+      "id": "1d41f808-cd13-40aa-b883-79fdd9b09afa",
+      "comment": "",
+      "command": "click",
+      "target": "name=cognome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fed5e4b1-8f4c-4cec-aafd-25a9dec6a5dc",
+      "comment": "",
+      "command": "type",
+      "target": "name=cognome",
+      "targets": [],
+      "value": "Acierno"
+    }, {
+      "id": "dc97fd5c-6102-47fc-a18b-ff81436875b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=codice",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=.col-sm-6 > .form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12afa2c0-9f86-4d0b-b8a7-91f3211c54c9",
+      "comment": "",
+      "command": "type",
+      "target": "name=codice",
+      "targets": [],
+      "value": "ay55866"
+    }, {
+      "id": "6c46d92f-65a0-4214-acf0-47d53b937d08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//td/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'MODIFICA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fd66d8d-85bf-4c0a-b3b4-b382aa391b71",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "id=modificaSelenium",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38b90ad9-5f08-46bb-b62e-c8898c98b6cb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d38bd44-41c4-44de-b47d-b4770293a523"]
+  }],
+  "urls": ["http://localhost:8080/FasTrain3.8/Login?email=erminio.acierno%40libero.it&psw=rossorubino1234"],
+  "plugins": []
+}
